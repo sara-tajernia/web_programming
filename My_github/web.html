@@ -13,31 +13,78 @@
     </video>
 
     <div class="float-parent-element">
-        <div class="float-child-element">
+        <div class="float-child-element1">
             <div class="content">
                 <dev class="profile_info">
-                    <img src="assets/profile.jpg" alt="profile" class="profile">
+                    <img src="assets/profile.jpg" alt="profile" class="profile" id="avatar_url">
                     <div class="info">
-                        <h3>Username</h3>
-                        <h3>link!!!!!!!!!!!!!!!!!!!!!!</h3>
-                        <h3>country/city</h3>
+                        <h3 id="name">Username</h3>
+                        <!-- <h3 id="blog">link!!!!!!!!!!!!!!!!!!!!!!</h3> -->
+                        <a id="blog">link</a>
+                        <h3 id="location">country/city</h3>
                     </div>
                 </dev>
                 <div class="education">
-                    <h4>Major</h4>
+                    <h4 id="bio" style="white-space: pre-line">Major</h4>
                     <h4>Education</h4>
                 </div>
-            </div>
-            
+            </div>    
         </div>
-        <div class="float-child-element">
+        <div class="float-child-element2">
             <div class="content2">
-                <input type="text" class="input_user" placeholder="Github Username">
-                <div>
-                    <button class="submit" role="button"><span class="text">Submit</span></button>
-                </div>
+                <form id="submit_btn">
+                    <input type="text" class="input_user" placeholder="Github Username" id="user-id">
+                    <div>
+                        <button class="submit" role="button" type="submit"><span class="text">Submit</span></button>
+                    </div>
+                </form> 
             </div>
         </div>
     </div>
+
+
+
+
+    <div id=not_found class="blur">
+        <div class="modal" >
+            <div class="close-pos"><span id="not_found_btn" class="close" title="Close Modal">&times;</span> </div>
+            <!-- <img src="./assets/profile.jpg" class="profile"> -->
+            <div class="modal-content">
+                <h4>This username was not found</h4>
+                <img src="assets/not_found2.png" class="logos">   
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id=server_error class="blur">
+        <div class="modal" >
+            <div class="close-pos"><span id="server_error_btn" class="close" title="Close Modal">&times;</span> </div>
+            <!-- <img src="./assets/profile.jpg" class="profile"> -->
+            <div class="modal-content">
+                <h4>Internet Disconnected</h4>
+                <img src="assets/error_server.png" class="logos">   
+            </div>
+
+        </div>
+    </div>
+
+    <div id=local_storage class="blur">
+        <div class="modal" >
+            <div class="close-pos"><span id="local_storage_btn" class="close" title="Close Modal">&times;</span> </div>
+            <!-- <img src="./assets/profile.jpg" class="profile"> -->
+            <div class="modal-content">
+                <h4>Data loaded from local storage</h4>
+                <img src="assets/error_server.png" class="logos">   
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <!-- <div id="root"></div> -->
+    <script src="app.js"></script>
 </body>
 </html>
