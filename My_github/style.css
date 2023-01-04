@@ -1,14 +1,16 @@
-
+/* Style the body */
 * {
     box-sizing: border-box;
 }
 
+/* Style the header */
 body {
     margin: 0;
     font-family: Arial;
     font-size: 17px;
 }
 
+/* background video */
 #myVideo {
     position: fixed;
     right: 0%;
@@ -18,6 +20,7 @@ body {
     z-index: -1;
 }
 
+/* Add a black to the top navigation */
 .float-parent-element { 
     width: 80%; 
     display: flex;
@@ -25,30 +28,32 @@ body {
     justify-content: space-between;
 } 
 
+/* Style the top navigation links */
 .float-child-element1 { 
     float: left; 
     width: 50%;
-    /* background-color: #5B42F3;  */
     margin: 10% 0 0 10%; 
 
 } 
 
+/* Style the content of left block */
 .content {
     background: rgba(0, 0, 0, 0.2);
     color: #f1f1f1;
     width: 100%;
-    /* margin: 30% 0 0 20%; */
     border-radius: 5%;
 }
 
-.profile_info{
+/* Style of top part of left content */
+.profile-info{
     display: flex;
     width: 100%;
     padding-top: 5%;
     margin-left: 5%;
 }
 
-.profile{
+/* Style of profile image */
+#avatar-url{
     width: 200px;
     background: linear-gradient(white, white) padding-box,
         linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB) border-box;
@@ -58,36 +63,40 @@ body {
     border: 5px solid transparent;
    
 }
-#blog{
-    text-decoration: none;
-    font-size: 25px;
-}
+
+/* Style of profile name */
 .info{
     margin-left: 10%;
     text-align: center;
 }
 
-.education{
-    padding: 10% 5% 3% 6%;
+/* Style of link to blog */
+#blog{
+    text-decoration: none;
+    font-size: 25px;
 }
 
+#bio {
+    padding: 8%;
+}
+/* Add a black to the top navigation */
 .float-child-element2 { 
     float: left; 
     width: 30%;
-    /* background-color: #c142f3;  */
     margin: 10% 0 0 20%;
 } 
 
+/* Style the content of right block */
 .content2{
     background: rgba(0, 0, 0, 0.3);
     padding: 2% 0 0 0;
-    /* margin: 27% 0 0 20%; */
     border-radius: 3%;
     text-align: center;
     display: block;
 }
 
-.input_user{
+/* Style input that get username github */
+#user-id{
     padding: 20px 15px;
     border-radius: 6px;
     font-size: 20px;
@@ -98,10 +107,13 @@ body {
     margin-top: 4%;
     width: 80%;
 }
-.input_user:hover{
+
+/* Style to has border while hovering */
+.input-user:hover{
     border: 2px solid #5B42F3;
 }
 
+/* Style Submit button to get username and request */
 .submit {
   align-items: center;
   background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
@@ -116,6 +128,7 @@ body {
   font-size: 20px;
 }
 
+/* /* Style to  */
 .submit:active,
 .submit:hover {
   outline: 0;
@@ -161,14 +174,10 @@ body {
 
 .close-pos {
     position: relative;
-    /* width: 100%; */
-    /* background-color: #5B42F3; */
-    /* width: 22px; */
     height: 30px;
 }
 
 .close{
-    /* position: absolute; */
     right: 10px;
     top: 0;
     color: rgb(0, 0, 0);
@@ -178,11 +187,9 @@ body {
 
 .modal-content {
     text-align: center;
-    /* size: 20px; */
 
 }
 
 .logos{
-    /* text-align: center; */
     width: 30%;
 }
